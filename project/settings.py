@@ -25,7 +25,14 @@ SECRET_KEY = 'django-insecure-jr)^0ej3fwp!1k$p0v7p-k0a!1e&x4lg@=_wckgjgw(kagef%t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api-drf-deploy-1.onrender.com']
+# ALLOWED_HOSTS = ['api-drf-deploy-1.onrender.com']
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "api-drf-deploy-1.onrender.com",  # your exact Render domain
+    ".onrender.com",                  # (optional) allows any Render subdomain
+]
+
 
 
 # Application definition
