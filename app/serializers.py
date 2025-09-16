@@ -1,10 +1,11 @@
 from rest_framework import serializers
-from .models import *
+from .models import Student   # better to import explicitly
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
-       Model = Student
-       fields = "__all__"
+        model = Student       # ✅ lowercase 'model'
+        fields = "__all__"
+
 
 # class StudentSerializer(serializers.Serializer):
 #     id = serializers.IntegerField(read_only=True)
